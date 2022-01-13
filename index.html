@@ -55,6 +55,7 @@
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
         var bounds_group = new L.featureGroup([]);
+        map.setZoom(4);
         function setBounds() {
         }
         function pop_add_coastline_medium_res_polygon_v7_4_0(feature, layer) {
@@ -228,7 +229,6 @@
         map.on("layerremove", function(){
             resetLabels([layer_amrdc_stations_1]);
         });
-        map.setZoom(6);
         </script>
     </body>
 </html>
